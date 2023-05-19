@@ -24,7 +24,7 @@ const Favourite = (props: Props) => {
         </div>
         <hr className=' mt-4'/>
         <div>{movies.length <1 ? <h2 className='text-lg font-bold text-center mt-8 px-4'>You currently don't have items in your favourite list 😔</h2>: ''}</div>
-        <div className='grid grid-cols-[1fr_1fr] px-4 gap-3'>{
+        <div className='grid sm:grid-cols-[1fr_1fr] px-4 gap-3'>{
            movies.map((each)=>  <MovieCard movie={each} />  )
             }</div>
     </div>
