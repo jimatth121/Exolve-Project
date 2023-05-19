@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import logo from "@/assets/image/imdblogo.png"
 type Props = {
   setIsOpen:(val: boolean)=> void

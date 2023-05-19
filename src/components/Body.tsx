@@ -1,6 +1,6 @@
 import { movieObj } from "./Hero"
 import MovieCard from "./MovieCard"
-import { useAppDispatch, useAppSelector } from "@/hooks/storehooks"
+import { useAppSelector } from "@/hooks/storehooks"
 import { checkFav } from "@/App"
 import {useEffect} from "react";
 
@@ -14,7 +14,7 @@ type Props = {
 
 }
 const Body = (props : Props) => {
-    const { data, movie, movieTitle, searchMovie, setSearchMovie, setMovie} = props
+    const { data, movie, searchMovie, setSearchMovie, setMovie} = props
     const favMovies= useAppSelector((state)=>state.favourite.movies)
 
    
