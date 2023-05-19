@@ -69,7 +69,7 @@ const Hero = ({ setMovieTitle, movieTitle}:Props) => {
         <div className='px-[30px] pt- h-[190px] w-[1000px] z-40'>
             <input placeholder='Search for your Favourite' onChange={handleMovieTitle} value={movieTitle} className='  w-[100%] rounded-3xl h-16 mb-8 px-5 border-0 border-none  text-2xl bg-white/40 placeholder:text-white text-white ' />
             {/* <h1 className='text-[3rem] font-[800] pb[0.3rem]'>{movie?.title || movie?.name || movie?.original_name}</h1> */}
-            <div className='font-bold text-2xl'>
+            <div className='font-bold text-lg md:text-2xl'>
                 {movie?.name}
             </div>
 
