@@ -66,14 +66,14 @@ const Hero = ({ setMovieTitle, movieTitle}:Props) => {
         backgroundImage:` url(https://image.tmdb.org/t/p/original/${movie?.backdrop_path})`
     }}
     >
-        <div className='px-[30px] pt- h-[190px] w-[1000px] z-40'>
-            <input placeholder='Search for your Favourite' onChange={handleMovieTitle} value={movieTitle} className='  w-[100%] rounded-3xl h-16 mb-8 px-5 border-0 border-none  text-2xl bg-white/40 placeholder:text-white text-white ' />
+        <div className='px-[30px] pt-8 md:pt-0 h-[190px] w-[1000px] z-40'>
+            <input placeholder='Search for your Favourite' onChange={handleMovieTitle} value={movieTitle} className='  w-[100%] rounded-3xl h-12 md:h-16 mb-8 px-5 border-0 border-none text-lg md:text-2xl bg-white/40 placeholder:text-white text-white ' />
             {/* <h1 className='text-[3rem] font-[800] pb[0.3rem]'>{movie?.title || movie?.name || movie?.original_name}</h1> */}
-            <div className='font-bold text-lg md:text-2xl'>
+            <div className=' font-bold text-sm md:text-2xl'>
                 {movie?.name}
             </div>
 
-            <div className=' leading-[1.3] pt-2 max-w-[360px] h-[80px]'>{truncate(movie?.overview || "", 150)}</div>
+            <div className=' leading-[1.3] pt-2 max-w-[360px] h-[80px]'>{truncate(movie?.overview || "", 70)}</div>
         </div>
         <div className='absolute top-0 left-0 w-[100%] h-[100%] bg-gradient-to-t from-transparent to-rgba(37,37,37,0.61) to-black'></div>
     </header>
