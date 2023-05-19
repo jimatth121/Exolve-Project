@@ -59,7 +59,7 @@ const Hero = ({ setMovieTitle, movieTitle}:Props) => {
         return str?.length > n ? str.substr(0, n- 1) + "..." : str;
       }
   return (
-    <header className='h-[448px] text-white object-cover flex justify-center items-center relative'
+    <header className='h-[200px] md:h-[448px] text-white object-cover flex justify-center items-center relative'
     style={{
         backgroundSize:"cover",
         backgroundPosition:"center",
