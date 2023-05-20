@@ -11,7 +11,7 @@ const Favourite = (props: Props) => {
     const {isOpen, setIsOpen} = props
   return (
     <div className={`w-[100%] bg-[rgba(235,_207,_178,_0.5)] h-screen fixed z-[100] flex justify-end transition-all  ${isOpen?'left-0':"left-[100%]"} overf`}>
-      <div className='w-[100%] md:w-[50%] lg:w-[35%] bg-white right-0 h-screen overflow-scroll'>
+      <div className='w-[100%] md:w-[50%] lg:w-[35%] bg-white right-0 h-screen overflow-scroll pb-8 sm:pb-0'>
         <div className='flex justify-end pt-4 px-4'>
         <button onClick={()=>setIsOpen(false)} className='text-black'>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-8 h-8">
